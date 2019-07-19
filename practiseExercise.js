@@ -21,9 +21,19 @@ describe('Name of the group', function() {
                 console.log(text);
                 
                 
-            })
+            });
             
+        });
+        element(by.linkText("Shop")).click();
+        element.all(by.tagName("app-card")).each(function (item) {
+            item.element(by,css("h4 a")).getText().then(function (text) {
+                if (text=="iphone X") {
+                    
+                }
+                
+            })
         })
+
 
 
 
